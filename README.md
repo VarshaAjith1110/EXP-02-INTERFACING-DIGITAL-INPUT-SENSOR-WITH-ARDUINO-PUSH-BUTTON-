@@ -68,6 +68,28 @@ FIGURE -03
 
 PROGRAM 
  
+int ledpin=7;
+int pushpin=2;
+int val=0;
+void setup()
+{
+  pinMode(ledpin, OUTPUT);
+  pinMode(pushpin,INPUT);
+}
+
+void loop()
+{
+  val =digitalRead(pushpin);
+  if(val==0)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+    
+}
  
  
  
@@ -76,6 +98,8 @@ PROGRAM
 
 
 Output of the simulation :
-
-[My image](username.github.com/repository/img/image.jpg)
+![vr](https://user-images.githubusercontent.com/94222288/203462242-da4dbeb6-de45-418a-a9ae-386fd8b90a84.png)
+![vr2](https://user-images.githubusercontent.com/94222288/203462295-142fc60a-b790-4334-b33f-dd254e0685b2.png)
+RESULT :
+Thus the digital input sensor is interfaced and activated using Adreno Push Button .
 
